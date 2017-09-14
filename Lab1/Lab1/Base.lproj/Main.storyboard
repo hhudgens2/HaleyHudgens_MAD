@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In which climate would you like to grow a plant?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHL-Hf-5VP">
+                                <rect key="frame" x="54" y="142" width="306" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305.67000000000002" id="3x9-3X-mtk"/>
+                                    <constraint firstAttribute="height" constant="17" id="wgD-Ky-6uc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frontImage" translatesAutoresizingMaskIntoConstraints="NO" id="PSX-YI-a4z">
+                                <rect key="frame" x="101" y="249" width="213" height="160"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-Of-usW">
+                                <rect key="frame" x="113" y="70" width="187" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant Finder " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isz-BV-7ZS">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187.33000000000001" id="QW4-cc-4QG"/>
+                                            <constraint firstAttribute="height" constant="40.670000000000002" id="gBY-xS-x52"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlj-Mw-ycZ">
+                                <rect key="frame" x="54" y="192" width="70" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxE-Ig-lM6">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8P8-jz-jh9">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kz-nJ-BPx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae5-kY-QRw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                                <state key="normal" title="Desert"/>
+                                                                <connections>
+                                                                    <action selector="choosePlants:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mk2-nc-frl"/>
+                                                                    <action selector="desertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lv0-Co-pi0"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Ae5-kY-QRw" firstAttribute="leading" secondItem="5kz-nJ-BPx" secondAttribute="leading" id="r4s-Vq-ctU"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="PY8-Rn-CXV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWf-Ci-PuV">
+                                <rect key="frame" x="290" y="192" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="7A1-g9-Auw"/>
+                                </constraints>
+                                <state key="normal" title="Jungle"/>
+                                <connections>
+                                    <action selector="choosePlants:" destination="BYZ-38-t0r" eventType="touchUpInside" id="min-C6-VO3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Op-nF-CwN">
+                                <rect key="frame" x="179" y="430" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90734735430022073" blue="0.87633457275884907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ae5-kY-QRw" firstAttribute="leading" secondItem="JHL-Hf-5VP" secondAttribute="leading" id="3AO-nd-Cel"/>
+                            <constraint firstItem="PSX-YI-a4z" firstAttribute="top" secondItem="AWf-Ci-PuV" secondAttribute="bottom" constant="27" id="4Gf-Qn-nTP"/>
+                            <constraint firstItem="PSX-YI-a4z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fQ-SM-dXS"/>
+                            <constraint firstItem="AWf-Ci-PuV" firstAttribute="top" secondItem="JHL-Hf-5VP" secondAttribute="bottom" constant="33" id="TcV-Hd-RjG"/>
+                            <constraint firstItem="Bnf-Of-usW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Veg-rl-7L5"/>
+                            <constraint firstItem="AWf-Ci-PuV" firstAttribute="trailing" secondItem="JHL-Hf-5VP" secondAttribute="trailing" id="Zfa-79-o2o"/>
+                            <constraint firstItem="Bnf-Of-usW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="acy-dv-Giz"/>
+                            <constraint firstItem="PSX-YI-a4z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bZl-m9-uUi"/>
+                            <constraint firstItem="Ae5-kY-QRw" firstAttribute="top" secondItem="JHL-Hf-5VP" secondAttribute="bottom" constant="33" id="ehs-ud-Bpm"/>
+                            <constraint firstItem="JHL-Hf-5VP" firstAttribute="top" secondItem="Bnf-Of-usW" secondAttribute="bottom" constant="31" id="xtb-UR-dVi"/>
+                            <constraint firstItem="JHL-Hf-5VP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ygQ-BR-HLm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="desertText" destination="7Op-nF-CwN" id="13h-bR-HR4"/>
+                        <outlet property="plantImage" destination="PSX-YI-a4z" id="HOi-G2-YXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52.173913043478265" y="-9.7826086956521738"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frontImage" width="213" height="160"/>
+    </resources>
+</document>
